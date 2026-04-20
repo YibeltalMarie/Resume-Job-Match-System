@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 from backend.resume_parser.models.education import Education
 from backend.resume_parser.models.experience import Experience
 from backend.resume_parser.models.resume import Resume

@@ -2,7 +2,12 @@
 Complete Phase 1 test - end to end.
 """
 
+import sys
 from pathlib import Path
+
+# Add project root to Python path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 from backend.resume_parser import ResumeParser
 
 # Initialize parser
